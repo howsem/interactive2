@@ -1,0 +1,150 @@
+body {
+	background: #cccccc;
+}
+
+.stage {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background:#FFF4D7;
+	position: relative;
+}
+#frontpanel{
+	width: 250px;
+	height:250px;
+	position: relative;
+	margin:auto;
+	top:250px;
+	background: black;
+	border-radius: 10px;
+}
+#frontpanelinner{
+	width: 220px;
+	height: 220px;
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	top:13px;
+	background:#444444;
+	border-radius: 15px 15px 15px 15px / 10% 10% 10% 10%;
+
+
+}
+#lens{
+	width:200px;
+	height:200px;
+	position: absolute;
+	left:10px;
+	top:10px;
+	border-radius: 150px;
+	border: 15px solid;
+	border-color: gray;
+	background: #232323;
+}
+#viewfinder-a {
+	border-bottom: 25px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 205px;
+    position: relative;
+    margin:auto;
+    top:-30px;
+}
+#viewfinder-a2{
+	height:15px;
+	width: 225px;
+	background: black;
+	position: relative;
+    margin:auto;
+    top:-30px;
+}
+#viewfinder-a3 {
+	border-bottom: 30px solid black;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    height: 0;
+    width: 170px;
+    position: relative;
+    margin:auto;
+    top:-85px;
+    z-index: 3;
+}
+#viewfinder-a4 {
+	border-bottom: 30px solid #444444;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    height: 0;
+    width: 160px;
+    position: relative;
+    margin:auto;
+    top:-107px;
+    z-index: 4;
+}
+#viewfinder-upper{
+	position: absolute;
+	left:0;
+	right:0;
+    margin:auto;
+    height: 190px;
+    width: 190px;
+    border-radius: 10px;
+    background: black;
+    top:40px;
+    z-index: 0;
+}
+#viewfinder-upper2{
+	position: absolute;
+	left:0;
+	right:0;
+    margin:auto;
+    height: 170px;
+    width: 170px;
+    border-radius: 8px;
+    background: #444444;
+    top:50px;
+    z-index: 1;
+}
+#winder{
+	position: absolute;
+	height: 130px;
+	width: 50px;
+	background: black;
+	border-radius: 5px;
+	left:280px;
+	top:300px;
+}
+#winder{
+	position: absolute;
+	height: 130px;
+	width: 50px;
+	background: black;
+	border-radius: 5px;
+	left:280px;
+	top:300px;
+}
+#winder-2{
+	position: absolute;
+	height: 60px;
+	width: 15px;
+	background: black;
+	border-radius: 3px;
+	left:570px;
+	top:270px;
+	z-index: 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
