@@ -1,0 +1,49 @@
+body {
+	
+}
+.center{
+	display: grid;
+	justify-items:center;
+	width: 100vw;
+}
+#platform{
+	position: relative;
+	float: left;
+	width: 1520px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(8, 25px);
+	grid-template-rows: repeat(10, 25px);
+	grid-gap: 2px;
+}
+.gridhalf{
+	display: grid;
+	grid-template-columns: repeat(4, 25px);
+	grid-template-rows: repeat(10, 25px);
+	grid-gap: 2px;
+}
+.dots{
+	background: black;
+	border-radius: 5px;
+	height:6px;
+	width: 6px;
+	transition: all 200ms ease-in-out;
+	place-self: center; /* reference: css-tricks.com/snippets/css/complete-guide-grid/ */
+}
+.full {
+	height:25px;
+	width: 25px;
+}
+.letter {
+	height: 268px;
+	width: 214px;
+	margin: 1px;
+	float: left;
+}
+
+
+
+
+
+

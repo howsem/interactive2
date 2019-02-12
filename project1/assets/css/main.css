@@ -1,40 +1,93 @@
 body {
-	
-}
-.center{
-	display: grid;
-	justify-items:center;
-	width: 100vw;
-}
-#platform{
-	position: relative;
-	float: left;
-	width: 1520px;
+	margin:0;
+	border-width: 0;
+	background-color: black;
 }
 .grid{
 	display: grid;
-	grid-template-columns: repeat(8, 25px);
-	grid-template-rows: repeat(10, 25px);
-	grid-gap: 2px;
+	grid-template-columns: repeat(8, 18px);
+	grid-template-rows: repeat(10, 18px);
+	grid-gap: 1px;
+}
+.gridhalf{
+	display: grid;
+	grid-template-columns: repeat(4, 18px);
+	grid-template-rows: repeat(10, 18px);
+	grid-gap: 1px;
 }
 .dots{
-	background: black;
-	border-radius: 5px;
-	height:6px;
-	width: 6px;
+	background: gray;
+	border-radius: 3px;
+	height:4px;
+	width: 4px;
 	transition: all 200ms ease-in-out;
 	place-self: center; /* reference: css-tricks.com/snippets/css/complete-guide-grid/ */
 }
 .full {
-	height:25px;
-	width: 25px;
+	height:18px;
+	width: 18px;
+	background-color: #FF4F00;
 }
 .letter {
-	height: 268px;
-	width: 214px;
-	margin: 1px;
+	height: 188px;
+	width: 152px;
+	margin: 0.5px;
 	float: left;
 }
+.half {
+	height: 188px;
+	width: 76px;
+	margin: 0.5px;
+	float: left;
+}
+#namepage{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	margin: auto;
+}
+#name {
+	height: 188px;
+	width: 615px;
+	top:25vh;
+	margin: auto;
+	position: relative;
+}
+#specimen{
+	height: 90vh;
+	width: 1540px;
+	position: relative;
+	margin: auto;
+}
+#pangram{
+	height: 90vh;
+	width: 1540px;
+	position: relative;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
