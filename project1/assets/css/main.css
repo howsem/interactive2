@@ -51,7 +51,7 @@ body {
 	min-height:101vh;
 	display:grid;
   	width:var(--column-width);
- 	grid-template-columns:repeat(50, 16px);
+ 	grid-template-columns:repeat(58, 16px);
   	grid-template-rows:repeat(600, 16px);
   	margin:-10.5px auto;
 }
@@ -60,7 +60,73 @@ body {
 	grid-column: 9/42;
 	grid-row:20/30;
 	position: relative;
+	display: none;
 }
+#tap{
+	grid-column: 9/42;
+	grid-row:20/30;	
+	animation: blink steps(1) 500ms infinite;
+}
+#tap .full {
+	background-color:#9f9f9f!important;
+}
+#tap .dots:not(.full):not(.makefull){
+	opacity: 0;
+}
+#tetris{
+	width:512px;
+	margin-left:128px;
+	margin-top:-192px;
+	z-index: 100;
+}
+.layer{
+	height:16px;
+	width:512px;
+	background-size: 100%;
+	position: relative;
+	animation: tetris steps(32) 6000ms;
+	animation-fill-mode: forwards;
+}
+.aa{
+	background-image: url("img/Tetris-02.png");
+	animation-delay: 26700ms;
+	animation-duration: 2300ms;
+}
+.bb{
+	background-image: url("img/Tetris-03.png");
+	animation-delay: 24200ms;
+	animation-duration: 2500ms;
+}
+.cc{
+	background-image: url("img/Tetris-04.png");
+	animation-delay: 21400ms;
+	animation-duration: 2800ms;
+}
+.dd{
+	background-image: url("img/Tetris-05.png");
+	animation-delay: 18400ms;
+	animation-duration: 3000ms;
+}
+.ee{
+	background-image: url("img/Tetris-06.png");
+	animation-delay: 14900ms;
+	animation-duration: 3500ms;
+}
+.ff{
+	background-image: url("img/Tetris-07.png");
+	animation-delay: 10900ms;
+	animation-duration: 4000ms;
+}
+.gg{
+	background-image: url("img/Tetris-08.png");
+	animation-delay: 5900ms;
+	animation-duration: 5000ms;
+}
+.hh{
+	background-image: url("img/Tetris-09.png");
+	
+}
+
 #specimen{
 	grid-column: 1/50;
 	grid-row: 100/150;
@@ -77,16 +143,23 @@ body {
 	position: relative;
 }
 #quote{
-	grid-column: 1/50;
+	grid-column: 1/58;
 	grid-row:200/600;
 	position: relative;
 }
 
 
 
+@keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+} 
 
-
-
+@keyframes tetris {
+	0% {top:0px;}
+	100%{top:512px;}
+}
 
 
 
