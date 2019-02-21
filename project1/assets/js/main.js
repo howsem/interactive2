@@ -1,38 +1,49 @@
 $(document).ready(function(){
 
-
- 	let A = $(".letter.A .makefull")
- 	let B = $(".letter.B .makefull")
- 	let C = $(".letter.C .makefull")
- 	let D = $(".letter.D .makefull")
- 	let E = $(".letter.E .makefull")
- 	let F = $(".letter.F .makefull")
- 	let G = $(".letter.G .makefull")
- 	let H = $(".letter.H .makefull")
- 	let I = $(".letter.I .makefull")
- 	let J = $(".letter.J .makefull")
- 	let K = $(".letter.K .makefull")
- 	let L = $(".letter.L .makefull")
- 	let M = $(".letter.M .makefull")
- 	let N = $(".letter.N .makefull")
- 	let O = $(".letter.O .makefull")
- 	let P = $(".letter.P .makefull")
- 	let Q = $(".letter.Q .makefull")
- 	let R = $(".letter.R .makefull")
-
-  $("#tap").click(function(){
-  	$(this).hide();
-  	$(".layer").addClass("animationstarts");
-  });
-  	let dot = $("#specimen .dots.full")
+	$("#tap").click(function(){
+		$(this).hide();
+		$(".layer").addClass("animationstarts");
+	});
+  	
 
 
 
-let square = $('.square')
-square.on('mouseenter', function(){
-	$(this).toggleClass('full')
-})
+	let square = $('.square')
+	square.on({
+	    mouseenter: function () {
+	        $(this).find(".dots").addClass('FULL');
+	    },
 
+	    mouseleave: function () {
+	        $(this).find(".dots").removeClass('FULL')
+	    }
+	}); 
+	// reference: stackoverflow.com/questions/9827095/is-it-possible-to-use-jquery-on-and-hover
+	square.click(function(){
+		$(this).find(".dots").toggleClass('full')
+	});
+	
+	let dots = $("#quote .dots:not(.full):not(.makefull)")
+	let fulls = $("#quote .full")
 
-
+	$("#quote .letter").click(function(){
+		dots.addClass("full");
+		// fulls.toggleClass("full");
+	});
+	
+	$ ("#quote .full").on({
+		mouseenter: function () {
+	        $(this).removeClass('full');
+	    },
+	})
 });
+
+
+
+
+
+
+
+
+
+

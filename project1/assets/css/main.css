@@ -1,5 +1,5 @@
 * {
-  --column-width:800px;
+  --column-width:768px;
 }
 
 body {
@@ -22,8 +22,10 @@ body {
 	grid-template-rows: repeat(10, 16px);
 }
 .square{
-	place-self: center; /* reference: css-tricks.com/snippets/css/complete-guide-grid/ */
-	z-index: 10;
+	place-self: center;/* reference: css-tricks.com/snippets/css/complete-guide-grid/ */
+	height:16px;
+	width:16px;
+	display: grid;
 }
 .dots{
 	background: #828282;
@@ -31,12 +33,15 @@ body {
 	height:4px;
 	width: 4px;
 	transition: all 200ms ease-in-out;
-	place-self: center; /* reference: css-tricks.com/snippets/css/complete-guide-grid/ */
+	margin:auto;
+	place-self: center;
 }
 .full {
 	height:14px;
 	width: 14px;
 	background-color: #FF4F00;
+	animation-delay: 200ms;
+	place-self: center;
 }
 .letter {
 	height: 160px;
@@ -55,8 +60,8 @@ body {
 	min-height:101vh;
 	display:grid;
   	width:var(--column-width);
- 	grid-template-columns:repeat(58, 16px);
-  	grid-template-rows:repeat(600, 16px);
+ 	grid-template-columns:repeat(56, 16px);
+  	grid-template-rows:repeat(400, 16px);
   	margin:-10.5px auto;
 }
 
@@ -90,43 +95,41 @@ body {
 	position: relative;
 }
 .animationstarts{
-	animation: tetris steps(32) 6000ms;
+	animation: tetris steps(32) 5000ms;
 	animation-fill-mode: forwards;
 }
 .aa{
 	background-image: url("img/Tetris-02.png");
-	animation-delay: 26700ms;
-	animation-duration: 2300ms;
+	animation-delay: 20900ms;
+	animation-duration: 1000ms;
 }
 .bb{
 	background-image: url("img/Tetris-03.png");
-	animation-delay: 24200ms;
-	animation-duration: 2500ms;
+	animation-delay: 19900ms;
+	animation-duration: 1000ms;
 }
 .cc{
 	background-image: url("img/Tetris-04.png");
-	animation-delay: 21400ms;
-	animation-duration: 2800ms;
+	animation-delay: 18900ms;
+	animation-duration: 1000ms;
 }
 .dd{
 	background-image: url("img/Tetris-05.png");
-	animation-delay: 18400ms;
-	animation-duration: 3000ms;
+	animation-delay: 16900ms;
+	animation-duration: 2000ms;
 }
 .ee{
 	background-image: url("img/Tetris-06.png");
 	animation-delay: 14900ms;
-	animation-duration: 3500ms;
+	animation-duration: 2000ms;
 }
 .ff{
 	background-image: url("img/Tetris-07.png");
-	animation-delay: 10900ms;
-	animation-duration: 4000ms;
+	animation-delay: 9900ms;
 }
 .gg{
 	background-image: url("img/Tetris-08.png");
-	animation-delay: 5900ms;
-	animation-duration: 5000ms;
+	animation-delay: 4900ms;
 }
 .hh{
 	background-image: url("img/Tetris-09.png");
@@ -148,27 +151,44 @@ body {
 	grid-row:170/180;
 	position: relative;
 }
-.center{
+.FULL{
+	height:14px;
+	width: 14px;
+	background-color: #FF4F00;
+	animation-delay: 200ms;
+	place-self: center;
+}
+/*.center{
 	width: 100vw;
 	position: absolute;
 	top: 1590.5px;
-    left: 1.5px;
-    z-index: -9;
+    left: 0.5px;
+    z-index: -10;
 }
-#drawing {
-	width:1280px; 
+.Center{
+	width:1280px;
+	height: 1280px;
+	margin:auto;
+}
+#drawingleft {
+	width:240px; 
 	height:1280px;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 16px);
 	grid-template-rows: repeat(auto-fill, 16px);
-	margin:auto;
-	z-index: -10;
+	float:left;
+	z-index: 10;
 }
-
-.hover{
-	height: 4px !important;
-	width: 4px !important;
-}
+#drawingright {
+	width:240px; 
+	height:1280px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 16px);
+	grid-template-rows: repeat(auto-fill, 16px);
+	float: right;
+	z-index: 10;
+	margin-right: 32px;
+}*/
 /*#test{
 	grid-column: 20/21;
 	grid-row: 1/1;
@@ -182,12 +202,21 @@ body {
 
 
 #quote{
-	grid-column: 1/58;
-	grid-row:200/600;
+	grid-column: 1/64;
+	grid-row:200/300;
 	position: relative;
 }
 
-
+#author{
+	grid-column: 1/58;
+	grid-row: 300/400;
+}
+#author .full {
+	background-color:#9f9f9f!important;
+}
+#author .dots:not(.full):not(.makefull){
+	opacity: 0;
+}
 
 @keyframes blink {  
     0% { opacity: 1.0; }
@@ -199,9 +228,6 @@ body {
 	0% {top:0px;}
 	100%{top:512px;}
 }
-
-
-
 
 
 
