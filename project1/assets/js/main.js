@@ -20,8 +20,19 @@ $(document).ready(function(){
  	let Q = $(".letter.Q .makefull")
  	let R = $(".letter.R .makefull")
 
-  $("#namepage").css("opacity:0");
   $("#tap").click(function(){
-  $("#namepage").css("opacity:100")
+  	$(this).hide();
+  	$(".layer").addClass("animationstarts");
   });
+  	let dot = $("#specimen .dots.full")
+
+
+
+let square = $('.square')
+square.on('mouseenter', function(){
+	$(this).toggleClass('full')
+})
+
+
+
 });
