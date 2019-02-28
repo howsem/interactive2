@@ -1,0 +1,64 @@
+body {
+	border:0;
+	margin:0;
+}
+
+#center {
+	min-height: 101vh;
+}
+.item {
+	margin: 30px auto;
+	background-color: black;
+	height:30vh;
+	width: 30vw;
+	max-height:250px;
+	max-width: 400px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.5vw;
+	color:white;
+	text-align: center;
+	cursor: pointer;
+}
+
+#item-1:active {
+	background-color: red;
+}
+#item-2:active {
+	transform: scale(0.8);
+}
+#item-3:active {
+	opacity: 0;
+}
+.round{
+	width:250px;
+	heihgt:250px;
+	border-radius: 1000px 1000px;
+}
+.item-5active{
+	animation:item-5 500ms forwards ease-in-out;
+}
+@keyframes item-5 {
+	0% {opacity: 1}
+	100% {opacity: 0}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

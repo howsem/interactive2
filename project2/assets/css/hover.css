@@ -1,0 +1,98 @@
+body {
+	border:0;
+	margin:0;
+}
+
+#center {
+	min-height: 101vh;
+}
+.item {
+	margin: 30px auto;
+	background-color: black;
+	height:30vh;
+	width: 30vw;
+	max-height:250px;
+	max-width: 400px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.5vw;
+	color:white;
+	text-align: center;
+
+}
+#item-1:hover{
+	opacity: 0;
+}
+#item-2:hover {
+	transform: scaleX(1.5);
+}
+#item-3:hover{
+	animation:item-3 1500ms linear infinite;
+}
+@keyframes item-3 {
+	0% {background-color: black;}
+	20%{background-color: red;}
+	40%{background-color: yellow;}
+	60%{background-color: green;}
+	80%{background-color: blue;}
+	100%{background-color: black;}
+}
+#item-4 {
+	background-color: red;
+}
+#item-5:hover{
+	animation: item-5 1000ms linear infinite;
+
+}
+@keyframes item-5{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+
+#item-7:hover{
+	animation:item-7 500ms forwards ease-in;
+}
+@keyframes item-7 {
+	0%{background-color:black;}
+	10%{background-color:#F8F0A4;}
+	20%{background-color:black;}
+	30%{background-color: #5C5401;}
+	100%{
+			background-color: #F8F0A4;
+			box-shadow:0px 0px 50px #F8F0A4;
+		}
+}
+
+.item-8hover{
+	animation:item-8 1000ms forwards ease-in-out;
+
+}
+@keyframes item-8{
+	0% {height:100%;}
+	100%{height:0%;}
+}
+
+a a:active a:visited {
+	color:white;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
