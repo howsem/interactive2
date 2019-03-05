@@ -1,0 +1,127 @@
+body {
+	border:0;
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+a:visited{
+	color:black;
+}
+#center {
+	min-height: 101vh;
+}
+.item {
+	margin: 30px auto;
+	background-color: black;
+	height:30vh;
+	width: 30vw;
+	max-height:250px;
+	max-width: 400px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.5vw;
+	color:white;
+	text-align: center;
+	cursor: pointer;
+	overflow: scroll;
+}
+
+#item-1 {
+	height:750px;
+	background-image: linear-gradient(to bottom, red,orange,yellow,green,blue,indigo,violet);
+}
+.item.special{
+	scroll-snap-type: mandatory;
+  	scroll-snap-points-y: repeat(500px);
+  	scroll-snap-type: y mandatory;
+}
+.item-2{
+	height:500px;
+	scroll-snap-align: start;
+}
+.a{
+	background-color:#3E8AF7; 
+}
+.b{
+	background-color:#F7B93E; 
+}
+.c{
+	background-color:#F93B3B; 
+}
+/*reference:https://css-tricks.com/practical-css-scroll-snapping/*/
+#item-3{
+	height: 105%;
+}
+.item-3active{
+	animation:item-3 1200ms steps(4) forwards;
+}
+@keyframes item-3 {
+	25% {background-color: red;}
+	50%{background-color: blue;}
+	75%{background-color: yellow;}
+	100%{background-color: black;}
+}
+#item-4{
+	height:101%;
+}
+.item-4active{
+	animation: item-4 500ms ease-in-out forwards;
+}
+@keyframes item-4{
+	to {border-radius: 1000px;}
+}
+
+#item-5{
+	height:105%;
+}
+#item-6{
+	height:105%;
+}
+#item-7{
+	height:100%;
+}
+
+#item-8 {
+	transform: rotate(100deg);
+}
+
+#item-9{
+	height:150%;
+}
+.display{
+	height:50px;
+	width: 30vw;
+	max-width: 400px;
+	background-color: black;
+	color:white;
+	margin:auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.5vw;
+}
+.display p {
+	color:white;
+}
+#item-10{
+	height:5000%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

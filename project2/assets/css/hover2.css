@@ -1,0 +1,114 @@
+body {
+	border:0;
+	margin:0;
+}
+
+#center {
+	min-height: 101vh;
+}
+.item {
+	margin: 30px auto;
+	background-color: black;
+	height:30vh;
+	width: 30vw;
+	max-height:250px;
+	max-width: 400px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.5vw;
+	color:white;
+	text-align: center;
+
+}
+#item-2:hover{
+	transform: scale(2);
+	transition: 300ms ease-in-out;
+}
+#item-3:hover{
+	background-color: gray;
+	transform: translate(10px, 10px);
+}
+#item-4:hover{
+	background-image: url("andy.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#item-5:hover{
+	animation: item-5 100ms steps(2) both infinite;
+}
+@keyframes item-5{
+	from {opacity: 1}
+	to {opacity: 0}
+}
+.bodyIn{
+	animation:bodyIn 500ms ease-in-out forwards;
+}
+@keyframes bodyIn {
+	form {background-color: white}
+	to {background-color: black}
+}
+.bodyOut {
+	animation:bodyOut 500ms ease-in-out forwards;
+}
+@keyframes bodyOut {
+	from {background-color: black}
+	to {background-color: white}
+}
+	
+#item-9:active {
+	background-color: gray;
+	box-shadow: 0 0 100px yellow;
+}
+.item-10On {
+	animation:item-10 50000ms ease-in-out forwards ;
+}
+@keyframes item-10{
+	to {transform: translate(200px);}
+}
+#item-11:active {
+	animation:item-11 100ms linear forwards;
+}
+@keyframes item-11 {
+	100%{
+		transform: scaleY(0)
+	}
+}
+
+#item-12 {
+	animation:item-12 2000ms linear infinite;
+}
+#item-12:active{
+	animation-play-state: paused;
+}
+@keyframes item-12 {
+	0% {transform: translate(0);}
+	25% {transform: translate(200px);}
+	50%{transform: translate(0);}
+	75%{transform: translate(-200px);;}
+	100%{transform: translate(0);}
+}
+#item-13{
+	background-image: url('trump.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#item-14{
+	animation:item-14 1000ms linear infinite;
+}
+
+@keyframes item-14 {
+	0% { background-color: #A93226 }
+	8%{background-color: #CB4335  }
+	16%{background-color: #884EA0}
+	24%{background-color: #7D3C98}
+	32%{background-color: #2471A3}
+	40%{background-color: #2E86C1  }
+	48%{background-color: #17A589}
+	56%{background-color: #138D75  }
+	64%{background-color: #229954}
+	72%{background-color: #28B463
+	80%{background-color: #D4AC0D}
+	88%{background-color: #D68910  }
+	96%{background-color: #CA6F1E}
+}
+
+
