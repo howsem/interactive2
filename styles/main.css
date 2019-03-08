@@ -4,45 +4,45 @@
 }
 
 body {
-	font-family: 'Inconsolata', monospace;
+	font-family: ff-scala-sans-pro, sans-serif;
 	font-size: 20px;
-	font-weight: normal;
+	font-weight: 400;
+	background-color: #EBEDEF;
 }
 
-/* this is a comment */
-
-#container {
-	width:500px;
-	margin: 0 auto;
+#personal{
+	margin:auto;
+	margin-top: 8vh;
+	width: 60vw;
 }
-
-#exercises, #projects {
-	margin: 40px 0px;
+#content {
+	margin:auto;
+	margin-top: 8vh;
+	width: 60vw;
 }
-
+#projects {
+	margin-top:30px;
+}
 h1 {
-	color:red;
+	color:blue;
+	font-weight: 700;
+	margin-bottom: 15px;
 }
-
-h1, h2, h3 {
-	margin: 20px 0;
-    font-size:20pt;
-} 
-
-p {
-	margin: 20px 0;
-	font-size:14pt;
-	line-height: 150%;
+h3{
+	color:blue;
+	font-weight: 700;
+	margin-bottom: 15px;
 }
-
 ul {
 	list-style-type: none;
+
 }
 
 a {
 	color:black;
+	text-decoration: none;
 }
 
 a:hover {
-	color:red;
+	color:blue;
 }
