@@ -81,19 +81,7 @@ function dragElement(elmnt) {
           yCoord=canvas.pageY-this.offsetTop
       }
   });
-              
-  $("#borrador").click(function(){
-      cntx.strokeStyle="#fff"
-  });
-  
-  
-  $("#limpiar").click(function(){
-      cntx.fillStyle="#fff";
-      cntx.fillRect(0,0,canvas.width, canvas.height);
-      cntx.strokeStyle="red";
-      cntx.fillStyle="red"
-  })
-  
+
   // reference:https://codepen.io/eagj/pen/wavwGR
 
   $('#item-4 .child').hover(function(){
