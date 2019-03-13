@@ -4,9 +4,28 @@ body {
 }
 
 
-
-
-
+#instruc{
+	height:200px;
+	width: 400px;
+	margin: auto;
+	margin-top: 30vh;
+	border-radius: 15px;
+	background-color:#E3E3E3;
+	font-family: ff-scala-sans-pro, sans-serif;
+	font-size: 30pt;
+	font-weight: 400;
+	color:#B0B0B0;
+	text-align: center;
+}
+p{
+	padding-top: 18%;
+} 
+.gone {
+	animation:gone 300ms forwards ease-in-out;
+}
+@keyframes gone {
+	to {opacity: 0; filter:blur(20px)}
+}
 
 
 
