@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
 
+
+
+	var color = '#FFBA4A'
 	let circles = []
 	
 
@@ -11,7 +14,15 @@ $(document).ready(function(){
 		}, 300);
 		
 	})
+	
 
+	let colors = [
+		"#FF5D4A",
+		"#FFBA4A",
+		"#60CFFC",
+		"#7E68E3",
+		"#F26DDA"
+	];
 
 	var xCoord,yCoord="";
   	var canvas=document.getElementById("garden");
@@ -33,24 +44,26 @@ $(document).ready(function(){
     	let circle = {
 			x:canvas.pageX-this.offsetLeft,
 			y:canvas.pageY-this.offsetTop,
-			blur:0
+			blur:0,
+			color:color
 		}
+
+		color = colors[Math.floor(Math.random()*colors.length)];
+		console.log(color)
 
     	function blurChecker(){
 
     		if(click){
 	    		mousedownCounter = mousedownCounter + 1
-	    		setTimeout(blurChecker, 100)
+	    		setTimeout(blurChecker, 20)
 	    		circle.blur ++
     		}
 
     	}
 
-    	setTimeout(blurChecker, 100)
+    	setTimeout(blurChecker, 20)
 
     	circles.push(circle)
-	
-		
 	});
     
     $(document).mouseup(function(){
@@ -71,13 +84,12 @@ $(document).ready(function(){
 			ctx.filter = 'blur(' + circles[i].blur + 'px)';
 			
 			ctx.beginPath();
+			ctx.fillStyle = circles[i].color;
 			ctx.arc(xCoord, yCoord, 150, 0, 2 * Math.PI);
 			ctx.fill();
-
-
 		}
-		requestAnimationFrame(draw)
 
+		requestAnimationFrame(draw)
 	}
 
 	requestAnimationFrame(draw)
