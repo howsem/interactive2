@@ -1,0 +1,26 @@
+body {
+	background: black;
+}
+
+.display {
+	width: 100vw;
+	text-align: center;
+	top:10%;
+	font-family: ff-scala-sans-pro, sans-serif;
+	font-size:20vw;
+	font-weight: 700;
+	color:white;
+}
+#date {
+	font-size: 8vw;
+	margin-top: 15vh;
+}
+
+
+
+
+
+
+
+
+
