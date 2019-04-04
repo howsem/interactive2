@@ -1,0 +1,59 @@
+body {
+	margin:0;
+	border:0;
+}
+
+.grid{
+	margin:auto;
+	width: calc(80vw - 10px);
+	display: grid;
+	grid-template-columns: repeat(8, calc(10vw - 10px));
+	grid-template-rows: 50px auto;
+	grid-column-gap: 10px;	
+
+}
+
+#header{
+	grid-column: 1/3;
+	grid-row: 1/2;
+	font-family: ff-scala-sans-pro, sans-serif;
+	font-weight: 700;
+	font-size: 20pt;
+	padding-top: 20px;
+	color:blue;
+}
+
+#welcome {
+	grid-column: 1/6;
+	grid-row: 2/3;
+	height: 80vh;
+	margin-top:80px;
+	font-family: ff-scala-sans-pro, sans-serif;
+	font-weight: 700;
+	font-size: 4.8vw;
+	line-height: 6vw;
+	z-index: 2
+}
+
+.welcomeLinks {
+	font-family: ff-scala-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color:blue;
+}
+
+.welcomeLinks:hover {
+	cursor: pointer;
+	font-family: ff-scala, sans-serif;
+	font-weight: 700;
+}
+#image{
+	grid-row: 2/3;
+	grid-column: 4/9;
+	height:80vh;
+	margin-top:140px;
+	background: url("img/TheChairs1.jpg") no-repeat center;
+	background-size: cover;
+	z-index: 0;
+
+}

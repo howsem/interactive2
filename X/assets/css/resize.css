@@ -1,0 +1,29 @@
+body {
+	
+}
+
+.container {
+	height:100vh;
+	width: 10.5vw;
+	margin:auto;
+
+}
+
+#logo {
+	width:10.5vw;
+	height:18vh;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+
+}
+
+
+
+
+
+
+
+
+
+
