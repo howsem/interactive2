@@ -1,0 +1,92 @@
+body {
+	margin:0;
+	border:0;
+}
+
+#index{
+	position: fixed;
+	margin-left:calc(10vw + 5pt);
+	width: auto;
+}
+
+#name{
+	font-family: forma-djr-deck, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 25pt;
+	padding-top: 30px;
+	color:black !important;
+}
+
+#welcome {
+	margin-top:50px;
+	font-family: forma-djr-deck, sans-serif;
+	font-weight: 400;
+	font-size: 18pt;
+	z-index: 2;
+	line-height: 30px;
+	color:#666666;
+}
+.links{
+	font-weight: 700;
+	color:blue;
+}
+a:visited, a{
+	text-decoration: none;
+	color:blue;
+}
+a.homePageLink, a.homePageLink:visited  {
+	color:black;
+}
+
+.grid{
+	height: 200vh;
+	margin:auto;
+	width: calc(80vw - 10px);
+	display: grid;
+	grid-template-columns: repeat(8, calc(10vw - 10px));
+	grid-template-rows: 450px auto;
+	grid-column-gap: 10px;	
+}
+
+
+.thumbnailLeft{
+	grid-column: 1/5;
+	grid-row: 2/3;
+	float:right;
+}
+.picture{
+	width:90%;
+}
+.description{
+	font-family: forma-djr-deck, sans-serif;
+	font-weight: 700;
+	color:blue;
+	text-align: right;
+	margin-top: -66%;
+    font-size: 40pt;
+}
+.titles{
+    font-size: 50pt;
+}
+.years{
+	color:black;
+}
+.media{
+	color:black;
+	font-weight: 400;
+}
+
+.thumbnailRight{
+	grid-column: 5/9;
+	grid-row: 2/3;
+	float:right;
+}
+
+
+
+
+
+
+
+
