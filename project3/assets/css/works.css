@@ -1,0 +1,36 @@
+body {
+	border:0;
+	margin:0;
+}
+
+.gallery{
+	font-family: forma-djr-deck, sans-serif;
+}
+
+.leftPanel{
+	width: 400px;
+	margin-left: 6vw;
+	position: fixed;
+	z-index: 10;
+}
+#rauschenberg{
+	font-weight: 700;
+	font-size: 20pt;
+}
+ul {
+	list-style-type: none;
+	font-weight: 700;
+	font-size: 20pt;
+	padding-left: 0;
+	margin-top:150px;
+}
+a {
+	color:black;
+	text-decoration: none;
+}
+
+
+
+
+
+
