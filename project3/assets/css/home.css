@@ -40,7 +40,16 @@ a {
 }
 
 
+pre{
+	margin:0;
+	width: 50vw;
+	float: left;
+}
 
-
-
+code.hljs.xml {
+    background: none;
+}
+code.hljs.javascript {
+    background: none;
+}
 

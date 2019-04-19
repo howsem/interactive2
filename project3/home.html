@@ -4,43 +4,147 @@
 <head>
     <title>Robert Rauschenberg</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="assets/css/home.css">
+    <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/home.js" defer></script>
+    <script src="assets/highlight/highlight.pack.js"></script>
+    <!-- <script src="assets/js/home.js" defer></script> -->
+    <script>
+        $(document).ready(function(){
+
+            let htmlCode = document.body.innerHTML
+            let cssCode = document.querySelector('style').textContent
+            let jsCode = document.querySelectorAll('script')[2].textContent
+
+
+            $("#html")[0].innerText = htmlCode;
+            $("#css")[0].innerText = cssCode;
+            $("#js")[0].innerText = jsCode;
+
+
+            hljs.initHighlightingOnLoad();
+
+            $.ajax({
+            url : "assets/css/img/robert_portrait.txt",
+            success : function (data) {
+                $(".imgText").html(data);
+                // console.log(data)
+            }
+            });
+
+
+        });
+    </script>
+
+    <link rel="stylesheet" href="assets/highlight/styles/xt256.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/dfk4zel.css">
 
-    <!-- <link href="assets/highlighter/prism.css" rel="stylesheet" />
-    <script src="assets/highlighter/prism.js" data-manual></script> -->
+    <style>
+        body {
+            border:0;
+            margin:0;
+            overflow: hidden;
+        }
+        .gallery{
+            font-family: forma-djr-deck, sans-serif;
+        }
+        .leftPanel{
+            width: 400px;
+            margin-left: 6vw;
+            position: fixed;
+            z-index: 10;
+        }
+        #rauschenberg{
+            font-weight: 700;
+            font-size: 20pt;
+        }
+        ul {
+            list-style-type: none;
+            font-weight: 700;
+            font-size: 20pt;
+            padding-left: 0;
+            margin-top:150px;
+        }
+        #portrait{
+            left: 63vw;
+            margin-top: 40vh;
+            position: absolute;
+            z-index: 0;
 
-    <link rel="stylesheet" href="assets/highlight/styles/default.css">
-    <script src="assets/highlight/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+        }
+        .imgText{
+            font-family: monospace;
+            pointer-events: none;
+            position: absolute;
+            width: 500px;
+            height: 600px;
+            left: 90px;
+            top: 90px;
+        }
+        img{
+            width: 400px;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        pre{
+            margin:0;
+            width: 33.3%;
+            float: left;
+            position: relative;
+            z-index: 1000;
+            font-size: 11pt;
+            line-height: 11pt;
+            pointer-events: none;
+        }
+        .deconstruction{
+            width: 90vw;
+            height:100vh;
+            margin: auto;
+        }
+
+    </style>
+    
   
 </head>
 
 <body>
 
+
     <div class="gallery">
         <div class="leftPanel">
             <div id="rauschenberg">
-                <h1>Robert<br>Rauschenberg</h1>
+                <a href="home.html"><h1>Robert<br>Rauschenberg</h1></a>
             </div>
             <ul>
                 <li><a href="works.html">works</a></li>
-                <li style="margin-top:50px">about</li>
+                <li style="margin-top:50px"><a href="bio.html">about</li></a>
             </ul>
         </div>
         <div id="portrait">
             <img src="assets/css/img/robert_portrait.jpg">
+            <p class="imgText" style="color: #FF4500"></p>
+            <!-- src="assets/css/img/robert_portrait.txt" -->
         </div>
     </div>
+    <div class="deconstruction">
 
-    <pre><code class="html">
-        <div class="codes">
-        </div>
-    </code></pre>
+        <pre><code>
+            <div class="codes" id="html">
+            </div>
+        </code></pre>
+        <pre style="width: 20vw;"><code>
+            <div class="codes" id="css">
+            </div>
+        </code></pre>
+        <pre><code>
+            <div class="codes" id="js">
+            </div>
+        </code></pre>
+
+    </div>
 </body>
 </html>

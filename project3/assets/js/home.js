@@ -1,7 +1,13 @@
 $(document).ready(function(){
 
-let bodyCode = document.body.innerHTML
-let headCode = document.head.innerHTML
+let htmlCode = document.body.innerHTML
+let cssCode = document.style.innerHTML
+let jsCode = document.script.innerHTML
 
-$(".codes")[0].innerText = bodyCode;
+$("#html")[0].innerText = htmlCode;
+$("#css")[0].innerText = cssCode;
+$("#js")[0].innerText = jsCode;
+
+
+hljs.initHighlightingOnLoad();
 });
