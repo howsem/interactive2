@@ -3,10 +3,6 @@ body {
 	border:0;
 }
 
-#garden {
-	z-index:-2;
-	position: fixed;
-}
 
 #index{
 	position: absolute;

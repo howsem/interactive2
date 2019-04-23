@@ -4,14 +4,110 @@
 <head>
     <title>Robert Rauschenberg</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="assets/css/works.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="assets/js/works.js" defer></script> -->
+    <script src="assets/highlight/highlight.pack.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/dfk4zel.css">
+    <script>
+        $(document).ready(function(){
 
+            let htmlCode = document.body.innerHTML
+            let cssCode = document.querySelector('style').textContent
+            let jsCode = document.querySelectorAll('script')[2].textContent
+
+
+            $("#html")[0].innerText = htmlCode;
+            $("#css")[0].innerText = cssCode;
+            $("#js")[0].innerText = jsCode;
+
+
+            hljs.initHighlightingOnLoad();
+
+            // $.ajax({
+            // url : "assets/css/img/robert_portrait.txt",
+            // success : function (data) {
+            //     $(".imgText").html(data);
+            //     // console.log(data)
+            // }
+            // });
+
+
+        });
+    </script>
+    <link rel="stylesheet" href="assets/highlight/styles/xt256.css">
+
+    <style>
+        body {
+            border:0;
+            margin:0;
+        }
+        .gallery{
+            font-family: forma-djr-deck, sans-serif;
+        }
+        .leftPanel{
+            width: 400px;
+            margin-left: 6vw;
+            position: fixed;
+            z-index: 10;
+        }
+        #rauschenberg{
+            font-weight: 700;
+            font-size: 20pt;
+        }
+        ul {
+            list-style-type: none;
+            font-weight: 700;
+            font-size: 20pt;
+            padding-left: 0;
+            margin-top:150px;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+
+        .works{
+            width:50vw;
+            margin-right:6vw;
+            padding-top:100px;
+            right:0;
+            position: absolute;
+        }
+        .sections{
+            width:50vw;
+            height:500px;
+            margin-top: 200px;
+        }
+        img {
+            float: right;
+        }
+
+        .caption{
+            width:45vw; 
+            font-weight: 700;
+            position: absolute;
+            float:left;
+            font-size: 30pt;
+        }
+        pre{
+            margin:0;
+            width: 33.3%;
+            float: left;
+            position: relative;
+            z-index: 1000;
+            font-size: 11pt;
+            line-height: 11pt;
+            pointer-events: none;
+        }
+        .deconstruction{
+            width: 90vw;
+            height:100vh;
+            margin: auto;
+            position: fixed;
+        }
+    </style>
   
 </head>
 
@@ -27,8 +123,8 @@
             </ul>
         </div>
         <div class="works">
-            <div id="one">
-                <img id="onePic" src="assets/css/img/rauschenberg-01.jpg">
+            <div id="Three" class="sections">
+                <img src="assets/css/img/rauschenberg-01.jpg" style="width: 500px;">
                 <div class="caption">
                     <h2>THREE TRAPS FOR MEDEA, 1959</h2>
                     <h3>Combine: oil, paper, fabric, metal, and glass bottle 
@@ -37,11 +133,33 @@
                     <h3>24 x 26 x 15 inches
                     (61 x 66 x 38.1 cm)</h3>
                 </div>
-            </div>  
+            </div> 
+            <div id="Oracle" class="sections">
+                <img src="assets/css/img/rauschenberg-02.jpg" style="height:500px; ">
+                <div class="caption">
+                    <h2>THREE TRAPS FOR MEDEA,<br>1962–65</h2>
+                    <h3>Five-part found-metal assemblage with five concealed radios: ventilation duct; automobile door on typewriter table, with crushed metal; ventilation duct in washtub and water, with wire basket; constructed staircase control unit housing batteries and electronic components; and wooden window frame with ventilation duct
+                    </h3>
+                    <h3>Dimensions variable</h3>
+                </div>
+            </div>   
         </div>
+
     </div>
 
-    <div class="codes">
+    <div class="deconstruction">
+        <pre><code>
+            <div class="codes" id="html">
+            </div>
+        </code></pre>
+        <pre style="width: 20vw;"><code>
+            <div class="codes" id="css">
+            </div>
+        </code></pre>
+        <pre><code>
+            <div class="codes" id="js">
+            </div>
+        </code></pre>
     </div>
 </body>
 </html>
