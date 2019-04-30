@@ -1,45 +1,30 @@
 @media only screen and (max-width: 678px) {
 	.leftPanel {
-		width:90vw;
+		width:90vw ;
 		margin-left: 5vw;
 	}
 	ul {
 		margin-top:50px;
 	}
-	li {
+	i {
 		margin-top:20px;
 	}
 	#rauschenberg{
         margin-top:-20px;
     }
+	#portrait {
+		left:0;
+		margin-left: calc(50vw - 200px);
+		margin-bottom: 5vh;
+	}
 	.imgText{
 		display: none;
 	}
 	.deconstruction{
 		margin:0;
-		width: 100vh ;
+		width: 100vh;
 	}
 	pre #js, .css{
 		display: none;
-
-	} 
-	.works{
-		width: 90vw;
-		margin-left: 5vh;
-		margin-right: 0: 
-
 	}
-	.sections{
-		width: 100%;
-	}
-	img{
-		width: 100% ;
-		height:0;
-	}
-	.caption{
-		width: 100% ;
-	}
-	#Three{
-		margin-top:300px;
-	}
-} 
+}
