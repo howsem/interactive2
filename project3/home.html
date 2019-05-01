@@ -28,7 +28,6 @@
             url : "assets/css/img/robert_portrait.txt",
             success : function (data) {
                 $(".imgText").html(data);
-
             }
             });
 
@@ -52,7 +51,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/dfk4zel.css">
 
     <style>
-
         body {
             border:0;
             margin:0;
@@ -91,8 +89,8 @@
             position: absolute;
             width: 500px;
             height: 600px;
-            left: 90px;
-            top: 90px;
+            left: -200px;
+            top: 145px;
         }
         img{
             width: 400px;
@@ -129,26 +127,28 @@
 </head>
 
 <body>
-
-
     <div class="gallery">
         <div class="leftPanel">
             <div id="rauschenberg">
-                <a href="home.html"><h1>Robert<br>Rauschenberg</h1></a>
+                <a href="home.html">
+                    <h1>Robert<br>Rauschenberg</h1>
+                </a>
             </div>
             <ul>
-                <li><a href="works.html">works</a></li>
-                <li style="margin-top:50px"><a href="bio.html">about</li></a>
+                <li>
+                    <a href="works.html">works</a>
+                </li>
+                <li style="margin-top:50px">
+                    <a href="bio.html">about</a>
+                </li>
             </ul>
         </div>
         <div id="portrait">
             <img src="assets/css/img/robert_portrait.jpg">
-            <p class="imgText" style="color: #FF4500"></p>
-            <!-- src="assets/css/img/robert_portrait.txt" -->
+            <p class="imgText" style="color: #B07112"></p>
         </div>
     </div>
     <div class="deconstruction">
-
         <pre><code>
             <div class="codes" id="html">
             </div>

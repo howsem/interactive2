@@ -6,8 +6,8 @@
 	ul {
 		margin-top:50px;
 	}
-	i {
-		margin-top:20px;
+	li {
+		margin-top:20px !important;
 	}
 	#rauschenberg{
         margin-top:-20px;

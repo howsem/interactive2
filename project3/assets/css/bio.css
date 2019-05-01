@@ -1,41 +1,59 @@
-body {
-	border:0;
-	margin:0;
+
+@media only screen and (max-width: 967px) {
+	.leftPanel {
+		width:90vw ;
+		margin-left: 5vw;
+	}
+	ul {
+		margin-top:50px;
+	}
+	li {
+		margin-top:20px !important;
+	}
+	#rauschenberg{
+        margin-top:-20px;
+    }
+    #biography{
+    	margin-top: 340px;
+    	width: 90vw;
+    	margin-left: 5vw;
+    	left:0;
+    	z-index: 10;
+    }
+    #portrait{
+    	filter: brightness(120%);
+    	left: -250px;
+    }
+	.imgText{
+		display: none;
+	}
+	.deconstruction{
+		margin:0;
+		width: 100vh;
+		z-index: 0;
+	}
+	pre #js, .css{
+		display: none;
+	}
 }
 
-.gallery{
-	font-family: forma-djr-deck, sans-serif;
+@media only screen and (max-width: 600px) {
+	#biography{
+		font-size: 15pt;
+	}
 }
 
-.leftPanel{
-	width: 400px;
-	margin-left: 6vw;
-	position: fixed;
-	z-index: 10;
+.imgText{
+	width: 800px;
+    overflow: hidden;
+    margin-top: 58vh;
+    left: calc(65vw - 1000px);
+    text-align: right;
+    position: fixed;
+    color: #B07112;
+    font-family: monospace;
+    pointer-events: none;
 }
-#rauschenberg{
-	font-weight: 700;
-	font-size: 20pt;
-}
-ul {
-	list-style-type: none;
-	font-weight: 700;
-	font-size: 20pt;
-	padding-left: 0;
-	margin-top:150px;
-}
-a {
-	color:black;
-	text-decoration: none;
-}
-
-.works{
-	width:50vw;
-	height:150vh;
-	margin-right:6vw;
-	padding-top:200px;
-	right:0;
-	position: absolute;
 }
 
 
