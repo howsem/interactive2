@@ -4,10 +4,10 @@
 		margin-left: 5vw;
 	}
 	ul {
-		margin-top:50px;
+		margin-top:40px;
 	}
 	li {
-		margin-top:20px;
+		margin-top:20px !important;
 	}
 	#rauschenberg{
         margin-top:-20px;
@@ -21,20 +21,14 @@
 	}
 	pre #js, .css{
 		display: none;
-
 	} 
 	.works{
 		width: 90vw;
 		margin-left: 5vh;
 		margin-right: 0: 
-
 	}
 	.sections{
 		width: 100%;
-	}
-	img{
-		width: 100% ;
-		height:0;
 	}
 	.caption{
 		width: 100% ;
@@ -42,4 +36,53 @@
 	#Three{
 		margin-top:300px;
 	}
+	#Untitled{
+		margin-top: 300px;
+	}
 } 
+
+.dim{
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+	overflow: hidden;
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.active{
+	display: grid;
+
+}
+.viewMode{
+	margin:auto;
+	width: 80vw;
+	position: relative;
+	z-index: 100;
+}
+.stopScolling{
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

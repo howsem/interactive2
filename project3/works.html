@@ -33,11 +33,41 @@
                 $("#html")[0].classList.toggle('hidden')
                 $("#css")[0].classList.toggle('hidden')
                 $("#js")[0].classList.toggle('hidden')
-                // $(".imgText")[0].classList.toggle('hidden')
-                } 
-            
+                $(".imgText")[0].classList.toggle('hidden')
+                }   
             });
+            $("#Untitled").mousedown(function(){
+                $(".dim").addClass("active");
+                $('.dim').prepend('<img id="untitled" class="viewMode "src="assets/css/img/rauschenberg-01.jpg" />');
+                $("body").addClass("stopScolling");
+            })
+            $(".dim").mousedown(function(){
+                $(".dim").removeClass("active");
+                $('.viewMode').remove();
+                $("body").removeClass("stopScolling");
+            })
 
+            $("#Oracle").mousedown(function(){
+                $(".dim").addClass("active");
+                $('.dim').prepend('<img id="Oracle" class="viewMode "src="assets/css/img/rauschenberg-02.jpg" />');
+                $("body").addClass("stopScolling");
+            })
+            $(".dim").mousedown(function(){
+                $(".dim").removeClass("active");
+                $('.viewMode').remove();
+                $("body").removeClass("stopScolling");
+            })
+
+            $("#Emprire").mousedown(function(){
+                $(".dim").addClass("active");
+                $('.dim').prepend('<img id="Emprire" class="viewMode "src="assets/css/img/rauschenberg-03.jpg" />');
+                $("body").addClass("stopScolling");
+            })
+            $(".dim").mousedown(function(){
+                $(".dim").removeClass("active");
+                $('.viewMode').remove();
+                $("body").removeClass("stopScolling");
+            })
         });
     </script>
     <link rel="stylesheet" href="assets/highlight/styles/xt256.css">
@@ -74,30 +104,35 @@
         }
 
         .works{
-            width:50vw;
+            width:70vw;
             margin-right:6vw;
             right:0;
             position: absolute;
             z-index: -10;
         }
         .sections{
-            width:50vw;
-            height:500px;
-            margin-top: 300px;
+            width:70vw;
+            margin-top: 200px;
             position: relative;
         }
-        img {
+        .sections:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .images {
             float: right;
-            height: 500px;
+            width: 80vw;
+            max-width: 800px;
         }
         .caption{
-            width:45vw; 
+            width:60vw; 
             font-weight: 700;
             position: absolute;
             float:left;
             font-size: 30pt;
-            max-height: 700px;
             overflow: hidden;
+            pointer-events: none;
         }
         pre{
             margin:0;
@@ -134,29 +169,30 @@
             </ul>
         </div>
         <div class="works"> 
-            <a href="Three.html"><div id="Three" class="sections">  
-                <img src="assets/css/img/rauschenberg-01.jpg">
+            <div id="Untitled" class="sections">  
+                <img src="assets/css/img/rauschenberg-01.jpg" class="images">
             
                 <div class="caption">
                     <h2>UNTITLED (EARLY EGYPTIAN), 1973</h2>
                 </div>                
-            </div></a>         
-            <a href="Oracle.html"><div id="Oracle" class="sections">
-                <img src="assets/css/img/rauschenberg-02.jpg">
+            </div>         
+            <div id="Oracle" class="sections">
+                <img src="assets/css/img/rauschenberg-02.jpg" class="images">
                 <div class="caption">
                     <h2>THREE TRAPS FOR MEDEA, 1962–65</h2>
                 </div>
-            </div></a>
-            <a href="Emprire.html"><div id="Emprire" class="sections">
-                <img src="assets/css/img/rauschenberg-03.jpg">
+            </div>
+            <div id="Emprire" class="sections">
+                <img src="assets/css/img/rauschenberg-03.jpg" class="images">
                 <div class="caption">
                     <h2>EMPIRE I, 1961</h2>
                 </div>
-            </div></a>   
+            </div>   
         </div>
+    </div>
+    <div class="dim">
 
     </div>
-
     <div class="deconstruction">
         <pre><code>
             <div class="codes" id="html">
