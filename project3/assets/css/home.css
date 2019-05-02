@@ -27,4 +27,11 @@
 	pre #js, .css{
 		display: none;
 	}
+	#desc{
+		display: none;
+	}
+}
+
+#desc:hover{
+	color:#737373;
 }
